@@ -16,5 +16,5 @@ const usb_utils = {
 
 // Export the usb_utils object
 module.exports = usb_utils;
-// 05E0 '0x05E0' 1504
-// OA5F  2655
+// VID '0xOA5F'  2655
+// Device 135 '0x0085'

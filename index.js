@@ -1,7 +1,8 @@
 'use strict';
 
 
-// https://github.com/node-usb/node-usb
+// https://node-usb.github.io/node-usb/
+// https://github.com/node-usb/node-usb/tree/master
 // https://www.digitalocean.com/community/tutorials/how-to-create-a-node-js-module
 // https://www.w3schools.com/nodejs/nodejs_modules.asp
 
