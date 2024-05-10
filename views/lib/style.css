@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,500,700");
+#print-usb body {
+  font-size: 1.6em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+#print-usb h1, #print-usb h2, #print-usb h3, #print-usb h4, #print-usb h5, #print-usb h6 {
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+  font-weight: 500;
+  color: #215354; }
+#print-usb h1 {
+  font-size: 3.125rem;
+  background-color: #fffaf1;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 8px; }
+#print-usb #logo {
+  background-image: url("/images/superior_court_seal.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: white;
+  height: 52px;
+  width: 50px;
+  display: block;
+  float: left;
+  opacity: .7;
+  transition: opacity .5s ease-out;
+  border: 2px solid #663300;
+  border-radius: 4px;
+  margin-right: 1.5rem; }
+#print-usb #logo:hover {
+  opacity: 1; }
+#print-usb header {
+  font-style: italic;
+  font-weight: 400; }
+#print-usb label,
+#print-usb legend {
+  font-weight: 500; }
+#print-usb strong, #print-usb b {
+  font-weight: 700;
+  color: #0B2C33; }
+#print-usb .centered {
+  text-align: center; }
+#print-usb .dg-btn,
+#print-usb .dg-btn--cancel,
+#print-usb .button, #print-usb button,
+#print-usb input[type="submit"],
+#print-usb input[type="reset"],
+#print-usb input[type="button"] {
+  color: #5A9C9A;
+  font-weight: 700;
+  border: 1px solid #5A9C9A;
+  background-color: white;
+  font-size: 11px;
+  padding: 0 30px; }
+#print-usb input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #BB9966;
+  border-color: #BB9966; }
+#print-usb select:focus {
+  border: 1px solid #BB9966;
+  outline: 0; }
+#print-usb input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #996633;
+  border-color: #996633; }
+#print-usb a {
+  color: #996633; }
+#print-usb a:hover {
+  color: #663300; }
+#print-usb a svg {
+  color: #BB9966; }
+#print-usb a:hover svg {
+  color: #996633; }
+#print-usb .dg-btn--ok,
+#print-usb .button.button-primary,
+#print-usb button.button-primary,
+#print-usb input[type="submit"].button-primary,
+#print-usb input[type="reset"].button-primary,
+#print-usb input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #BB9966;
+  border-color: #BB9966; }
+#print-usb .dg-btn--ok:hover,
+#print-usb .button.button-primary:hover,
+#print-usb button.button-primary:hover,
+#print-usb input[type="submit"].button-primary:hover,
+#print-usb input[type="reset"].button-primary:hover,
+#print-usb input[type="button"].button-primary:hover,
+#print-usb .button.button-primary:focus,
+#print-usb button.button-primary:focus,
+#print-usb input[type="submit"].button-primary:focus,
+#print-usb input[type="reset"].button-primary:focus,
+#print-usb input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #996633;
+  border-color: #996633; }
+#print-usb input[type="email"]:focus,
+#print-usb input[type="number"]:focus,
+#print-usb input[type="search"]:focus,
+#print-usb input[type="text"]:focus,
+#print-usb input[type="tel"]:focus,
+#print-usb input[type="url"]:focus,
+#print-usb input[type="password"]:focus,
+#print-usb textarea:focus,
+#print-usb select:focus {
+  border: 1px solid #BB9966;
+  outline: 0; }
+#print-usb input[type="checkbox"],
+#print-usb input[type="radio"] {
+  display: inline-block;
+  margin-left: 1rem; }
+#print-usb ul, #print-usb ol, #print-usb dd {
+  margin-left: 2rem;
+  margin-top: 2rem; }
+#print-usb table {
+  margin-bottom: 0; }
+#print-usb .form-errors {
+  color: #aa0000; }
+#print-usb form input.has-error,
+#print-usb form select.has-error,
+#print-usb textarea.has-error {
+  border-color: #aa0000; }
+#print-usb form label.has-error {
+  color: #aa0000; }
+#print-usb form .large-text {
+  font-size: 1.75rem;
+  height: auto; }
+#print-usb .see-all {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  vertical-align: text-top; }
+#print-usb .see-all-checkbox {
+  margin-bottom: 0; }
+#print-usb .participant-phone {
+  padding-top: .5em; }
+#print-usb textarea {
+  font-family: 'Courier New', Courier, monospace;
+  height: auto; }
+#print-usb .dg-content {
+  text-align: center; }
+#print-usb #mainMenu li {
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  width: 45%;
+  margin: 2% 4% 2% 0;
+  display: block;
+  font-size: 1.5rem; }
+#print-usb #mainMenu li a {
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid #5A9C9A;
+  display: block;
+  padding: 1.8rem;
+  line-height: 3; }
+#print-usb #mainMenu li a:hover {
+  border-color: #215354;
+  background-color: #f6fffb; }
+#print-usb #mainMenu li svg {
+  display: block;
+  margin: 0 auto;
+  font-size: 190px; }
+#print-usb .group-box {
+  margin: 2rem 0 4rem;
+  padding: 1rem 2rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #5A9C9A;
+  background-color: #f6fffb; }
+#print-usb #timeslotForm .group-box {
+  margin-bottom: 0;
+  padding: 0rem 2rem 1rem; }
+#print-usb .hidden {
+  display: none; }
+#print-usb a.add-another {
+  text-decoration: none;
+  display: block;
+  margin-left: 1rem;
+  font-size: 1.25rem; }
+#print-usb input:disabled,
+#print-usb select:disabled {
+  background-color: #ddd;
+  color: #666;
+  cursor: not-allowed; }
+#print-usb #schedule-display {
+  margin-left: 0; }
+#print-usb #schedule div.filled {
+  line-height: 1; }
+#print-usb #schedule div.filled {
+  font-weight: 700;
+  font-size: 1.2em; }
+#print-usb #schedule div.empty {
+  font-style: italic; }
+#print-usb #schedule ul {
+  list-style-type: none; }
+#print-usb #schedule h4 {
+  border-bottom: 1px solid #BB9966;
+  margin-right: 3.5rem;
+  color: #BB9966; }
+#print-usb #schedule > ul li,
+#print-usb #schedule > ul li ul {
+  width: 100%;
+  display: block;
+  margin-left: 0;
+  padding-left: 0; }
+#print-usb #schedule .timeslot-item {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  width: 24.5%;
+  text-align: center;
+  padding: 0 2rem 1rem 0; }
+#print-usb #schedule .timeslot-item a {
+  box-sizing: border-box;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #5A9C9A;
+  padding: 1rem;
+  line-height: 2;
+  text-decoration: none;
+  height: 120px; }
+#print-usb #schedule .timeslot-item a.filled {
+  border-color: #0B2C33;
+  border-width: 2px; }
+#print-usb #schedule .timeslot-item a:hover {
+  border-color: #215354;
+  background-color: #f6fffb;
+  border-bottom-width: 2px; }
+#print-usb #schedule .timeslot-item a .datetime {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 500; }
+#print-usb #schedule .timeslot-item a.empty .datetime {
+  color: #666666;
+  font-size: 1.5em; }
+#print-usb #schedule .timeslot-item a.empty:hover .datetime {
+  color: black; }
+#print-usb #schedule #printer {
+  margin-left: -30px; }
+#print-usb .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f6fffb; }
+#print-usb #participants table {
+  width: 100%; }
+#print-usb th.VueTables__sortable {
+  cursor: pointer; }
+#print-usb span.VueTables__heading {
+  color: #BB9966;
+  font-size: 2rem; }
+#print-usb .v-select.dropdown ul,
+#print-usb .v-select.dropdown ul li {
+  padding: auto;
+  margin: auto;
+  height: auto; }
+#print-usb .v-select.dropdown input {
+  border-style: none; }
+#print-usb .v-select.dropdown button.clear {
+  padding: 3px 3px 3px 5px;
+  margin: auto;
+  height: auto;
+  border-radius: 10px;
+  display: inline-block; }
+#print-usb .v-select .dropdown-menu > .highlight > a {
+  background: #f6fffb;
+  color: black; }
+#print-usb .v-select input[type=search],
+#print-usb .v-select input[type=search]:focus {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 1rem; }
+#print-usb #participant-stats .toggle {
+  font-size: .7rem;
+  display: inline-block;
+  padding-left: 4rem; }
+#print-usb #participant-stats ul, #print-usb #participant-stats li {
+  list-style-type: none;
+  margin-left: 0; }
+#print-usb #participant-stats .stat-header .element {
+  font-weight: 700; }
+#print-usb #participant-stats a.stat {
+  text-decoration: none; }
+#print-usb #participant-stats a.stat:hover {
+  font-weight: 500; }
+#print-usb #participant-stats .element {
+  display: inline-block;
+  padding-right: 1rem; }
+#print-usb #participant-stats .stat-date {
+  width: 7rem; }
+#print-usb #participant-stats .stat-case {
+  width: 12rem; }
+#print-usb #participant-stats .stat-name {
+  min-width: 20rem; }
+
+@media (max-width: 1024px) {
+  #print-usb #schedule ul li ul li a {
+    height: 140px; } }
+@media (max-width: 700px) {
+  #print-usb #schedule ul li ul li a {
+    font-size: 12px; } }
+@page {
+  margin: 2cm;
+  margin-top: 1cm; }
+@media print {
+  #print-usb .container {
+    width: 100% !important;
+    max-width: 100% !important; }
+  #print-usb #logo {
+    display: none; }
+  #print-usb .screen-only-inline,
+  #print-usb .screen-only {
+    display: none; }
+  #print-usb .print-only {
+    display: block; }
+  #print-usb .see-all, #print-usb .see-all-checkbox {
+    display: none !important; }
+  #print-usb input, #print-usb select {
+    border-style: none;
+    font-weight: 700;
+    padding-left: 0; }
+  #print-usb h1 {
+    background-color: transparent;
+    padding: 0; }
+  #print-usb #seal {
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 1rem; }
+  #print-usb #timeslotForm .group-box {
+    page-break-inside: avoid; }
+  #print-usb .group-box {
+    background-color: transparent; }
+  #print-usb header {
+    font-style: normal;
+    margin-top: -3.5rem;
+    margin-left: 7.25rem;
+    margin-bottom: 4rem; }
+  #print-usb body {
+    font-size: 12px; }
+  #print-usb #schedule .timeslot-print {
+    page-break-inside: avoid; }
+  #print-usb #schedule .timeslot-item {
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0; }
+  #print-usb #schedule .timeslot-item:nth-child(odd) {
+    background-color: #eeeeee; }
+  #print-usb #schedule .timeslot-item a {
+    display: none; }
+  #print-usb #schedule .day {
+    break-before: always;
+    page-break-before: always;
+    clear: left; }
+  #print-usb #schedule .day:first-child {
+    break-before: avoid;
+    page-break-before: avoid; }
+  #print-usb #schedule .timeslot-details {
+    width: 90%;
+    margin-left: 5rem; }
+  #print-usb #schedule .timeslot-details th,
+  #print-usb #schedule .timeslot-details td {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 1.1rem; }
+  #print-usb #schedule h4 {
+    margin-right: 0; }
+  #print-usb #schedule .date-print {
+    font-variant: small-caps;
+    margin-bottom: -.6rem;
+    font-size: .9rem; }
+  #print-usb #schedule .time-print,
+  #print-usb #schedule .timeslot-content {
+    font-size: 1.75rem;
+    display: inline-block;
+    font-weight: 500; }
+  #print-usb #schedule .time-print {
+    color: #215354;
+    width: 5em; }
+  #print-usb #schedule .timeslot-content {
+    font-weight: 700;
+    color: #996633; } }
+@media screen {
+  #print-usb .screen-only {
+    display: block; }
+  #print-usb .screen-only-inline {
+    display: inline-block; }
+  #print-usb .screen-only.hidden {
+    display: none; }
+  #print-usb .print-only {
+    display: none; }
+
+  #schedule .timeslot-print {
+    display: none; } }
+
+/*# sourceMappingURL=pdgal.css.map */
