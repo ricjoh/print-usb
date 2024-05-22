@@ -1,10 +1,60 @@
 <html id="print-usb">
-  <head>
-    <title>USB Print Server</title>
-    <link rel="stylesheet" href="lib/skeleton.css" type="text/css" />
-    <link rel="stylesheet" href="lib/style.css" type="text/css" />
-  </head>
-  <body>
-   <h1>USB Print Server 0.1.0</h1>
-  </body>
+
+<head>
+	<title>USB Print Server</title>
+	<link rel="stylesheet" href="lib/skeleton.css" type="text/css" />
+	<link rel="stylesheet" href="lib/style.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#status").click(function () {
+				$.get("http://localhost:2345/status", function (data) {
+					$("#status-results").html(data);
+				});
+			});
+			$("#test").click(function () {
+				let labeldata = { 'label' : '.' +
+					'N\n' +
+					'q812\n' +
+					'Q1218\n' +
+					'S6\n' +
+					'X20,10,2,802,1188\n' +
+					'A50,70,0,3,3,1,N,\"Ferguson Agency\"\n' +
+					'A35,120,0,5,3,2,N,\"$999.99\"\n' +
+					'A50,250,0,3,2,1,N,\"Client Deliverable\"\n' +
+					'LO20,300,802,10\n' +
+					'b250,350,Q,m2,s12,eQ,\"1122 Boogie Woogie Ave\"\n' +
+					'b250,723,A,d9,e78,\"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n' +
+					'B190,1070,0,3,3,7,100,R,\"998152-001\"\n' +
+					'P1\n' +
+					'.\n\n'};
+console.log(labeldata);
+			$.ajax({
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				url: "http://localhost:2345/print",
+				data: JSON.stringify(labeldata),
+				dataType: 'json'
+			 } );
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h1>USB Print Server 0.1.0</h1>
+	<!-- a button that calls localhost:2345/status and puts the html response on the screen -->
+	<section class="container">
+		<div class="row">
+			<div class="six columns">
+				<button id="test">Print Test Label</button>
+			</div>
+			<div class="six columns">
+				<button id="status">Get Status</button>
+				<div id="status-results" class="pre"></div>
+			</div>
+		</div>
+</body>
+</section>
+
 </html>

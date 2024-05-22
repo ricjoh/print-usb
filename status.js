@@ -30,8 +30,15 @@ P1
 .
 
 `;
+
+// label = `^default
+// `;
+
+label = `UQ
+`;
+
   client.write(label);
-  client.destroy();
+  // client.destroy();
 });
 
 client.on('data', (data) => {
