@@ -25,6 +25,7 @@ Releasing the button after the first flash resets the network factory options on
 
 #### 2-Flash Sequence
 Releasing the button after the second flash sequence (two flashes) will reset the printer defaults only.
+
 #### 3-Flash Sequence
 Releasing the button after the third flash sequence (three flashes) will reset both printer and network settings (equivalent ZPL commands <span style="font-family: Courier New,Courier,monospace;">^JUN</span> and <span style="font-family: Courier New,Courier,monospace;">^JUF</span></span></lightning-formatted-rich-text></div>
 
