@@ -8,7 +8,7 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$("#status").click(function () {
-				$.get("http://localhost:2345/status", function (data) {
+				$.get('./status', function (data) {
 					$("#status-results").html(data);
 				});
 			});
@@ -28,11 +28,10 @@
 					'B190,1070,0,3,3,7,100,R,\"998152-001\"\n' +
 					'P1\n' +
 					'.\n\n'};
-console.log(labeldata);
 			$.ajax({
 				type: "POST",
 				contentType: "application/json; charset=utf-8",
-				url: "http://localhost:2345/print",
+				url: './print',
 				data: JSON.stringify(labeldata),
 				dataType: 'json'
 			 } );
@@ -42,8 +41,8 @@ console.log(labeldata);
 </head>
 
 <body>
-	<h1>USB Print Server 0.1.0</h1>
-	<!-- a button that calls localhost:2345/status and puts the html response on the screen -->
+	<h1>Zebra Network Web Print 0.1.1</h1>
+	<!-- a button that calls ./status and puts the html response on the screen -->
 	<section class="container">
 		<div class="row">
 			<div class="six columns">
