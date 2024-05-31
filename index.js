@@ -52,7 +52,11 @@ if ( args['help'] || args['h']) {
 if ( args['v'] || args['verbose'] ) {
 	console.log(args);
 	DEBUG = true;
-	console.log( app.disabled('trust proxy') ? 'trust proxy disabled' : 'trust proxy enabled' );
+	const packageInfo = require('./package.json');
+	// Access the version property
+	const version = packageInfo.version;
+	console.log('Version:', version);
+	// console.log( app.disabled('trust proxy') ? 'trust proxy disabled' : 'trust proxy enabled' );
 }
 
 // add this handler before emitting any events
