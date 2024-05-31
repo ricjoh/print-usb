@@ -86,6 +86,7 @@ console.log('Server listening at http://localhost:' + sp + '/');
 let printer_config = args['printer']?.split(':') || ['10.10.3.127', 9100];
 
 let PRINTER = new NetworkZebra(printer_config[0], printer_config[1], DEBUG);
+PRINTER.status();
 
 app.use('/', express.static(__dirname + '/views'));
 

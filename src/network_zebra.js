@@ -9,6 +9,7 @@ class NetworkZebra {
         this.lastStatus = '';
 		this._debug = debug;
 		this.ready = false;
+		console.log('Printer object created.\nConnection information: ' + this.ip_addr + ':' + this.port);
     }
 
 	connect() {
@@ -17,13 +18,13 @@ class NetworkZebra {
 
 		client.on('connect', () => {
 			this.printer = client;
-			if ( this._debug ) console.log('Connected to printer.');
+			if ( this._debug ) console.log('TCP/IP: Connected to printer, calling callback...');
 			this.ready = true;
 		})
 		.on('data', (data) => {
 			if ( this._debug ) console.log( 'Status returned from printer.' );
-			this.lastStatus = data.toString('ascii');
-			this.printer.destroy();
+			this.lastStatus += data.toString('ascii').replace(/[\002\003]/g, '') + '\n';
+			// this.printer.destroy();
 		})
 		.on('error', (err) => {
 			console.error('Error:', err.message);
@@ -36,7 +37,7 @@ class NetworkZebra {
 		})
 
 		.connect(this.port, this.ip_addr, () => {
-			if ( this._debug ) console.log('Connecting to printer at ' + this.ip_addr + ':' + this.port + '...');
+			if ( this._debug ) console.log('CALLBACK: Connected to printer at ' + this.ip_addr + ':' + this.port);
 		});
 
 	}
@@ -68,15 +69,23 @@ class NetworkZebra {
 		this.lastStatus = '';
 		if ( this._debug ) console.log('STATUS: Requested printer connection...');
 		this.connect();
+		let tries =  50;
 		let interval = setInterval(() => {
 			if (this.ready) {
 				clearInterval(interval);
 				if ( this._debug ) console.log('STATUS: Asking printer for status...');
-				this.printer.write("UQ\n");
+				// let status_request += '! U1 getvar "interface.network.active.ip_addr"' + "\n\x03"; // for ip address
+				let status_request = "~HQPP\n~HI\n";
+				this.printer.write(status_request);
 			} else {
-				console.log('STATUS: Waiting for printer to be ready...');
+				if ( tries-- > 1 ) {
+					console.log('STATUS: Waiting for printer to be ready... ' + tries + ' tries left.');
+				} else {
+					console.error('STATUS: Printer not ready after 50 tries.');
+					clearInterval(interval);
+				}
 			}
-		}, 50);
+		}, 100);
 
 	}
 
